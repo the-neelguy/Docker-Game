@@ -7,13 +7,13 @@ STEPS TO FOLLOW
 1. Clone the Dockerfile into a specific folder in your computer
 2. Start Docker and make sure you have all the dependencies pre-installed.
 3. Move on to the code editor (for eg. VS CODE) and open the terminal to write the following commands -
-     *a. docker build -t 2048-game .
+     *     docker build -t 2048-game .
          This command creates a docker image and downloads all the dependencies like nginx, zip and curl while executing.
-     *b. docker images
+     *     docker images
          This command helps you to see the docker images created in your system. If the previous step is completed successfully, you will see an image called 2048-game
-     *c. docker images | grep 2048
+     *     docker images | grep 2048
          This command will let you see the image specifications along with the image id.
-     *d. docker run -d -p 80:80 <image_id>
+     *     docker run -d -p 80:80 <image_id>
          Paste the image id in the command and this will run and create a container out of the docker image.
 
 4. Once it is done, to verify, you can move to your browser and type http://localhost:80 and the 2048 game should appear.
